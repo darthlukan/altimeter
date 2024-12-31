@@ -66,8 +66,8 @@ queue_t from_core1_queue;
  * 
  *
  * Pins:
- * GPIO_2  (pin 4) i2c_sda Data In/Out -> SDI/SDI on DPS310
- * GPIO_3  (pin 5) i2c_scl Clock       -> SCK on DPS310
+ * GPIO_4  (pin 6) i2c_sda Data In/Out -> SDI/SDI on DPS310
+ * GPIO_5  (pin 7) i2c_scl Clock       -> SCK on DPS310
  *
  * 3V3(OUT)(pin 36)                    -> VCC/VIN on DPS310
  * GND     (pin 38)                    -> GND on DPS310
