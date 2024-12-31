@@ -73,8 +73,8 @@ queue_t from_core1_queue;
  * GND     (pin 38)                    -> GND on DPS310
  */
 
-const uint dps310_i2c_sdi  = 6;
-const uint dps310_i2c_scl  = 7;
+const uint dps310_i2c_sdi  = 4;
+const uint dps310_i2c_scl  = 5;
 // If we were running two DPS310's, we'd need to pull-down SDO/DDO
 // to change this to 0x76 for the second unit.
 const uint8_t dps310_addr = 0x77;
