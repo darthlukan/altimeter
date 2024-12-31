@@ -30,6 +30,7 @@
 
 
 #define DELAY_MS 1000
+#define BAUD_RATE_I2C 100000
 
 /*
  * Pass sensor data from our reader
@@ -137,10 +138,7 @@ int main() {
     stdio_init_all();
 
     // SSD1306 Init
-    // TODO: This assumes we'll always put the screen on i2c0. A more robust
-    // way would be comparing what is on the bus via known device address, 
-    // and configure it that way.
-    i2c_init(i2c_default, 100000);
+    i2c_init(i2c_default, BAUD_RATE_I2C);
     gpio_set_function(PICO_DEFAULT_I2C_SDA_PIN, GPIO_FUNC_I2C);
     gpio_set_function(PICO_DEFAULT_I2C_SCL_PIN, GPIO_FUNC_I2C);
     gpio_pull_up(PICO_DEFAULT_I2C_SDA_PIN);
